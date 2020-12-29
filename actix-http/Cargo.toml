@@ -94,6 +94,10 @@ serde_derive = "1.0"
 open-ssl = { version="0.10", package = "openssl" }
 rust-tls = { version="0.19", package = "rustls" }
 
+# FIXME: remove these override
+actix-tls = { git = "https://github.com/actix/actix-net.git", branch = "fix/actix-tls" }
+actix-service = { path = "../actix-net/actix-service" }
+
 [[bench]]
 name = "content-length"
 harness = false
